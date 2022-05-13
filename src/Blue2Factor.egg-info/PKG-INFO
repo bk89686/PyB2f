@@ -1,11 +1,11 @@
 Metadata-Version: 2.1
 Name: Blue2Factor
-Version: 0.1.4
+Version: 0.1.5
 Summary: Used to implement Blue2Factor
 Home-page: https://www.blue2factor.com
 Author: Christopher McLain
 Author-email: chris@blue2factor.com
-Project-URL: Bug Tracker, https://github.com/bk89686/blue2factorpy/issues
+Project-URL: Bug Tracker, https://github.com/bk89686/PyB2f/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
@@ -21,7 +21,7 @@ It can be used with both Django and Flask.
 
 ##### To install with pip:
 
-`pip install Blue2FactorPy==0.1.3`
+`pip install Blue2Factor`
 
 You may have to install the packages below:
 
