@@ -44,6 +44,13 @@ class Auth():
     def getSignout(self, companyId):
         return self.secureUrl + "/SAML2/SSO/" + companyId + "/Signout"
     
+    def djangoSignout(self, companyId):
+        return djangoRedirect(self.getSignout(companyId))
+        
+    def flaskSignout(self, companyId):
+        return make_response(redirect(self.getSignout(companyId), 302))
+        
+    
     def authenticateFlaskRequest(self, request, companyId, loginUrl, privateKeyStr):
         jwt = request.form.get("B2F_AUTHN") or request.cookies.get("B2F_AUTHN")
         b2fSetup = request.form.get("b2fSetup")
