@@ -2,7 +2,13 @@
 
 This python package is used for python webservers that use Blue2Factor
 
-It can be used with both Django and Flask. You may have to install the packages below:
+It can be used with both Django and Flask. 
+
+##### To install with pip:
+
+`pip install Blue2FactorPy==0.1.3`
+
+You may have to install the packages below:
 
 `python3 -m pip install jwt rsa django flask requests`
 
