@@ -35,6 +35,11 @@ def myTest():
 @app.after_request
 def setCookie(response):
     return b2f.setB2fCookie(response)
+    
+    
+#If a user signs out call:
+	return b2f.flaskSignout(companyId) 
+
 ```
 
 ### Or using Django
@@ -57,6 +62,9 @@ def index(request):
 @app.after_request
 def setCookie(response):
     return b2f.setB2fCookie(response)
+    
+#If a user signs out call:
+	return b2f.djangoSignout(companyId)
 ```
 
 for questions, please contact us at (607) 238-3522 or help@blue2factor.com
