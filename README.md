@@ -6,7 +6,7 @@ It can be used with both Django and Flask.
 
 ##### To install with pip:
 
-`pip install Blue2FactorPy==0.1.3`
+`pip install Blue2Factor`
 
 You may have to install the packages below:
 
