@@ -53,7 +53,7 @@ loginUrl = "LOGIN_URL that was entered at https://secure.blue2factor.com"
 b2f = Authentication.Auth()
 
 def index(request):
-	if not b2f.authenticateDjangoRequest(request, companyId, loginUrl, privateKeyStr):
+    if not b2f.authenticateDjangoRequest(request, companyId, loginUrl, privateKeyStr):
         return b2f.redirect
     #do what you normall do
     template = loader.get_template('sample.html')
